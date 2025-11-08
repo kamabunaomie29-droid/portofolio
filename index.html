@@ -1,0 +1,135 @@
+<!-- FICHIER: index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naomi Kamabu — Développeuse Web & Mobile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Naomi Kamabu</a>
+      <nav class="nav" id="nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn small">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Bonjour — je suis <span class="accent">Naomi Kamabu</span></h1>
+          <p class="lead">Développeuse Web & Mobile — je conçois des applications réactives et des expériences utilisateurs soignées.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul class="meta">
+            <li><strong>Stack:</strong> HTML • CSS • JavaScript • React • Flutter</li>
+            <li><strong>Localisation:</strong> République Dém. du Congo</li>
+            <li><strong>Email:</strong> <button class="link-btn" id="copyEmail">naomi.kamabu@email.com</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>À propos de moi</h2>
+      <p>Je suis développeuse spécialisée en web et mobile. J'aime transformer des idées en interfaces claires et performantes, et je fais attention à l'accessibilité, aux performances et au design</p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Front-end</h3>
+          <p>HTML5, CSS3, Sass, JavaScript (ES6+), React</p>
+        </div>
+        <div class="skill">
+          <h3>Mobile</h3>
+          <p>Flutter, React Native, bonnes pratiques UI mobile</p>
+        </div>
+        <div class="skill">
+          <h3>Back-end & outils</h3>
+          <p>Node.js, REST, Firebase, Git, CI/CD</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <article class="project-card">
+          <div class="project-thumb">📱</div>
+          <h3>App mobile — Gestion de tâches</h3>
+          <p>Application Flutter pour gérer les tâches quotidiennes avec synchronisation cloud et notifications.</p>
+          <a class="link" href="#">Voir le code</a>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <div class="project-thumb">💻</div>
+          <h3>Site e‑commerce (React)</h3>
+          <p>Front-end moderne avec filtres produits, panier et paiement mock.</p>
+          <a class="link" href="#">Voir le site</a>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <div class="project-thumb">🌐</div>
+          <h3>Portfolio interactif</h3>
+          <p>Site personnel performant, responsive et accessible — conçu pour mettre en valeur le travail.</p>
+          <a class="link" href="#">Voir le projet</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Tu veux travailler avec moi ? Envoie‑moi un message.</p>
+      <form id="contactForm" class="contact-form">
+        <label>
+          Nom
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Envoyer</button>
+      </form>
+      <p class="muted">Ou copie mon email: <span id="emailText">naomi.kamabu@email.com</span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Naomi Kamabu — Développeuse Web & Mobile</p>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
